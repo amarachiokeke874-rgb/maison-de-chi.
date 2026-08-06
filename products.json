@@ -3,42 +3,42 @@
     "id": 1,
     "title": "Printed Dress",
     "price": "12,000",
-    "image": "Dress1.jpg",
+    "image": "./Dress1.jpg",
     "paymentLink": "#"
   },
   {
     "id": 2,
     "title": "Quality Knitted Dress",
     "price": "11,000",
-    "image": "Dress2.jpg"",
+    "image": "./Dress2.jpg",
     "paymentLink": "#"
   },
   {
     "id": 3,
     "title": "Quality Floral Gown",
     "price": "15,000",
-    "image": "Dress3.jpg"",
+    "image": "./Dress3.jpg",
     "paymentLink": "#"
   },
   {
     "id": 4,
     "title": "Glamourous dress",
     "price": "13,000",
-    "image": "Dress4.jpg"",
+    "image": "./Dress4.jpg",
     "paymentLink": "#"
   },
   {
     "id": 5,
     "title": "Quality Short",
     "price": "8,000",
-    "image": "Dress5.jpg"",
+    "image": "./Dress5.jpg",
     "paymentLink": "#"
   },
   {
     "id": 6,
     "title": "unisex T-Shirt",
     "price": "9,000",
-    "image": "Dress6.jpg"",
+    "image": "./Dress6.jpg",
     "paymentLink": "#"
   }
 ]
