@@ -1,16 +1,37 @@
 [
   {
     "id": 1,
-    "title": "Chinyere Silk Scarf",
-    "price": "15,000",
-    "image": "REPLACE_WITH_YOUR_DIRECT_IMAGE_LINK",
-    "paymentLink": "REPLACE_WITH_YOUR_PAYSTACK_LINK"
+    "title": "The Angela Gold Gown",
+    "price": "85,000",
+    "image": "https://images.unsplash.com/photo-1566174053879-31528523f8ae?q=80&w=800",
+    "paymentLink": "#"
   },
   {
     "id": 2,
-    "title": "Angela Golden Gown",
+    "title": "Chi Signature Silk Wrap",
+    "price": "35,000",
+    "image": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=800",
+    "paymentLink": "#"
+  },
+  {
+    "id": 3,
+    "title": "L'Extraordinaire Satin Set",
+    "price": "52,000",
+    "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800",
+    "paymentLink": "#"
+  },
+  {
+    "id": 4,
+    "title": "Maison Noir Evening Heels",
     "price": "45,000",
-    "image": "REPLACE_WITH_YOUR_DIRECT_IMAGE_LINK",
-    "paymentLink": "REPLACE_WITH_YOUR_PAYSTACK_LINK"
+    "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=800",
+    "paymentLink": "#"
+  },
+  {
+    "id": 5,
+    "title": "The Divine Chi Handbag",
+    "price": "75,000",
+    "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800",
+    "paymentLink": "#"
   }
 ]
