@@ -208,7 +208,7 @@
 
     <header>
         <div class="brand-box">
-            <h1 class="brand-title">Maison de Chi</h1>
+            <h1 class="brand-title">MAISON DE CHI</h1>
             <p class="tagline">L'Extraordinaire Grace d'Angela</p>
         </div>
     </header>
@@ -231,7 +231,7 @@
     <script>
         async function fetchBoutique() {
             try {
-                const response = await fetch('products.json');
+                const response = await fetch('./products.json');
                 const products = await response.json();
                 const grid = document.getElementById('product-grid');
                 
