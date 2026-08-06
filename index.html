@@ -231,7 +231,7 @@
     <script>
         async function fetchBoutique() {
             try {
-                const response = await fetch('https://amarachiokeke874-rgb.github.io/maison-de-chi/products.json');
+                const response = await fetch('./products.json');
                 const products = await response.json();
                 const grid = document.getElementById('product-grid');
                 
