@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Chinyere Silk Scarf",
+    "price": "15,000",
+    "image": "REPLACE_WITH_YOUR_DIRECT_IMAGE_LINK",
+    "paymentLink": "REPLACE_WITH_YOUR_PAYSTACK_LINK"
+  },
+  {
+    "id": 2,
+    "title": "Angela Golden Gown",
+    "price": "45,000",
+    "image": "REPLACE_WITH_YOUR_DIRECT_IMAGE_LINK",
+    "paymentLink": "REPLACE_WITH_YOUR_PAYSTACK_LINK"
+  }
+]

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison de Chi | Boutique</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style>
+        :root { --cream: #FDFBF7; --gold: #C5A059; --dark: #1A1A1A; }
+        body { margin: 0; background: var(--cream); font-family: 'Montserrat', sans-serif; color: var(--dark); }
+        
+        header { text-align: center; padding: 100px 20px; background: white; border-bottom: 1px solid #eee; }
+        .brand { font-family: 'Cinzel', serif; font-size: 3.5rem; letter-spacing: 12px; color: var(--gold); margin: 0; }
+        .tagline { letter-spacing: 4px; font-size: 0.8rem; color: #999; margin-top: 10px; text-transform: uppercase; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 50px 20px; }
+        #grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 40px; }
+
+        .card { background: white; padding: 15px; transition: 0.4s; border: 1px solid transparent; }
+        .card:hover { border: 1px solid var(--gold); transform: translateY(-5px); }
+        .card img { width: 100%; height: 400px; object-fit: cover; }
+        
+        .info { padding: 20px 0; text-align: center; }
+        .item-name { font-family: 'Cinzel', serif; font-size: 1.1rem; margin-bottom: 10px; }
+        .price { color: var(--gold); font-weight: bold; margin-bottom: 20px; display: block; }
+        
+        .btn { 
+            display: inline-block; width: 100%; padding: 15px 0; 
+            background: var(--gold); color: white; text-decoration: none;
+            letter-spacing: 2px; font-size: 0.8rem; transition: 0.3s;
+        }
+        .btn:hover { background: var(--dark); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="brand">MAISON DE CHI</h1>
+        <div class="tagline">The Art of Extraordinary Living</div>
+    </header>
+
+    <div class="container">
+        <div id="grid"></div>
+    </div>
+
+    <script>
+        async function fetchProducts() {
+            const response = await fetch('products.json');
+            const data = await response.json();
+            const grid = document.getElementById('grid');
+            
+            data.forEach(product => {
+                grid.innerHTML += `
+                    <div class="card">
+                        <img src="${product.image}" alt="${product.title}">
+                        <div class="info">
+                            <div class="item-name">${product.title}</div>
+                            <span class="price">₦${product.price}</span>
+                            <a href="${product.paymentLink}" class="btn">COLLECT PIECE</a>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+        fetchProducts();
+    </script>
+</body>
+</html>
